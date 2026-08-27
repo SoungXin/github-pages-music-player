@@ -113,7 +113,7 @@ def main(args) :
             musiclist.add(music)
 
     del_music_lists()
-    musiclist_path = MUSIC_LIST % now()
+    musiclist_path = MUSIC_LIST
     musiclist.save_to_file(musiclist_path)
     to_js(musiclist_path)
     log.info(f"完成，共收录 {musiclist.size()} 首歌曲")
