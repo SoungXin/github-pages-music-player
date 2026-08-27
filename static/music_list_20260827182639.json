@@ -241,6 +241,19 @@
                 "lyric_id": ""
             },
             {
+                "id": "e4d33a459e3201f1ca3c40d85da65c95",
+                "name": "四月物语",
+                "artist": "林家谦/JACE 陈凯咏",
+                "album": "White Summer Unboxing",
+                "url": "static/demo流行/四月物语.mp3",
+                "pic": "",
+                "lyric": "",
+                "source": "local",
+                "url_id": "e4d33a459e3201f1ca3c40d85da65c95",
+                "pic_id": "",
+                "lyric_id": ""
+            },
+            {
                 "id": "ba2476d69babee0ba5781bfdd22dc128",
                 "name": "如果有来生",
                 "artist": "谭维维",
