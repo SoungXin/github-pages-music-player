@@ -117,18 +117,15 @@ def main(args) :
     musiclist.save_to_file(musiclist_path)
     # to_js(musiclist_path)
     log.info(f"完成，共收录 {musiclist.size()} 首歌曲")
-
-log.info(f"【调试】保存前内存歌单条目数：{musiclist.size()}")
-# 打印第一条歌曲url，确认内存是新扫描结果
-if musiclist.size()>0:
-    log.info(f"【调试】第一条歌曲url：{musiclist.item[0]['url']}")
-
-musiclist.save_to_file(musiclist_path)
-
-# save之后再打印一次，看对象有没有被篡改
-log.info(f"【调试】保存后内存歌单条目数：{musiclist.size()}")
-if musiclist.size()>0:
-    log.info(f"【调试】保存后第一条歌曲url：{musiclist.item[0]['url']}")
+    log.info(f"【调试】保存前内存歌单条目数：{musiclist.size()}")
+    # 打印第一条歌曲url，确认内存是新扫描结果
+    if musiclist.size()>0:
+        log.info(f"【调试】第一条歌曲url：{musiclist.item[0]['url']}")
+    musiclist.save_to_file(musiclist_path)
+    # save之后再打印一次，看对象有没有被篡改
+    log.info(f"【调试】保存后内存歌单条目数：{musiclist.size()}")
+    if musiclist.size()>0:
+        log.info(f"【调试】保存后第一条歌曲url：{musiclist.item[0]['url']}")
 
 def calculate_md5(file_path):
     return hashlib.md5(file_path.encode()).hexdigest().lower()
