@@ -112,7 +112,7 @@ def main(args) :
             )
             musiclist.add(music)
 
-    del_music_lists()
+    # del_music_lists()
     musiclist_path = MUSIC_LIST
     musiclist.save_to_file(musiclist_path)
     # to_js(musiclist_path)
