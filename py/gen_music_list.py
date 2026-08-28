@@ -171,7 +171,7 @@ class MusicList:
         sorted_items = sorted(self.item, key=lambda x: x.get('url', ''))
         self.item = sorted_items
         
-        with open(file_path, 'w+', encoding=DEFAULT_ENCODING) as file:
+        with open(file_path, 'w', encoding=DEFAULT_ENCODING) as file:
             json.dump([self.__dict__], file, ensure_ascii=False, indent=4)
 
 class Music:
